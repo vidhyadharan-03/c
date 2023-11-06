@@ -655,11 +655,436 @@ int main()
 ## RESULT:
 Thus,  C program to search an element in an array  is successfully executed.
 
+# EX4(A)-DATATYPES AND OPERATORS
+## AIM:
+To write a Program to check whether a given character is upper case, lower case, number or special character using conditional operator
+## ALGORITHM:
+1. Include the <stdio.h> header file.
+
+2. Define the main function.
+
+3. Declare a character variable named let.
+
+4. Read a character from the user using scanf.
+
+5. Check the character's category using if-else statements based on ASCII values.
+
+6. If the character is uppercase (ASCII 65-90), print "Upper."
+
+7. If the character is lowercase (ASCII 97-122), print "Lower."
+
+8. If the character is a number (ASCII 48-57), print "Number."
+
+9. If the character doesn't fall into the above categories, print "Symbol."
+## PROGRAM:
+~~~
+#include <stdio.h>
+int main()
+{
+   char let;
+    scanf("%c",&let);
+
+   if(let>=65 && let<=90)
+     {
+       printf("Upper");
+     }
+   else if(let>=97 && let<=122)
+    {
+       printf("Lower");
+    }
+    else if(let>=48 &&let<=57)
+   {
+      printf("Number");
+}
+    else
+       {
+          printf("Symbol");
+}
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/22a1cb3c-c981-4081-a25b-336d753d62f2)
+## RESULT:
+Thus, the c program executed successfully
+
+# EX4(B)-UNCONDITIONAL STATEMENTS
+## AIM:
+To write a C Program to check whether the given triangle is isosceles, equilateral, or scalene triangles using an if-else ladder.
+## ALGORITHM:
+1.Include the <stdio.h> header file.
+
+2.Define the main function.
+
+3.Declare three integer variables: a, b, and c.
+
+4.Read three integers from the user using scanf.
+
+5.Check if all three sides are equal (Equilateral) using if condition with a == b && a == c.
+
+6.If not all sides are equal, check if at least two sides are equal (Isosceles) using else if with (a == b && a != c) || (a != b && a == c).
+
+7.If none of the above conditions are met, it's a Scalene triangle.
+
+8.Print the corresponding triangle type based on the condition met.
+## PROGRAM:
+~~~
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d %d %d ",&a,&b,&c);
+    if(a==b && a==c)
+    {
+        printf("Equilateral triangle.");
+    }
+    else if((a==b && a!=c) || (a!=b && a==c))
+    {
+        printf("Isosceles triangle.");
+    }
+    else
+    {
+        printf("Scalene triangle.");
+    }
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/b872846d-29cf-4109-a139-aa3152049725)
+## RESULT:
+Thus, program to check the triangle has been executed successfully.
+
+# EX4(C)-STRINGS
+## AIM:
+To find the length of the given string.
+## ALGORITHM:
+1. Include the necessary header files: <stdio.h> and <string.h>.
+
+2. Define the main function.
+
+3. Declare a character array Str with a size of 10 to store a string.
+
+4. Declare an integer variable i for counting characters in the string.
+
+5. Read a string from the user using scanf.
+
+6. Use a for loop to iterate through the characters in the string until the null character '\0' is encountered.
+
+7. Inside the loop, increment the i variable for each character.
+
+8. After the loop, print the length of the string using printf.
+## PROGRAM:
+~~~
+#include <stdio.h>
+#include <string.h>
+  
+ int main()
+{
+    char Str[10];
+    int i;
+    scanf("%s", Str);
+    for (i = 0; Str[i] != '\0'; ++i)
+    {
+        
+    }
+    printf("Length of Str is %d",i );
+  return 0;  
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/1124e053-2b61-4203-ae4a-3fb31baca324)
+## RESULT:
+Thus, program To find the length of the given string has executed successfully.
+
+# EX4(D)-STRING APPLICATION
+## AIM:
+To Write a C program to reverse a string using loops
+## ALGORITHM:
+1. Include the necessary header files: <stdio.h> and <string.h>.
+
+2. Define the main function.
+
+3. Declare a character array str with a size of 20 to store a string.
+
+4. Read a line of text (including spaces) from the user until the newline character is encountered using scanf with the format specifier %[^\n].
+
+5. Print the entered string using printf.
+
+6. Print "Reversed string is: " to indicate the reversed string.
+
+7. Use a for loop to iterate in reverse order through the characters of the string, starting from the last character (determined by strlen(str) - 1) down to the first character (index 0).
+
+8. Inside the loop, print each character in reverse order.
+## PROGRAM:
+~~~
+#include<stdio.h>
+#include<string.h>
 
 
+int main()
+{
+    char str[20];
+    scanf("%[^\n]",str);
+    printf("Entered string is: %s\n",str);
+    printf("Reversed string is: ");
+    for(int i=(strlen(str)-1);i>=0;i--)
+    {
+         printf("%c",str[i]);
+    }
+    return 0;
+    //printf("Reversed string is: %s",str(str));
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/ab7d56a4-ee00-4498-ac3c-a0a6939d30b2)
+## RESULT:
+Thus,program to reverse a string using loops has executed successfully.
 
+# EX5(A)-POINTERS
+## AIM:
+To Write a C program to test whether the number is equal to zero or not by using pointers. 
+## ALGORITHM:
+1. Include the <stdio.h> header file.
 
+2. Define the main function.
 
+3. Declare an integer variable a to store an integer.
 
+4. Declare an integer pointer p.
+
+5. Read an integer from the user and store it in variable a using scanf.
+
+6. Point the pointer p to the address of the variable a.
+
+7. Check the value pointed to by p:
+
+    If it's greater than 0, print "the number is Positive."
+    If it's less than 0, print "the number is Negative."
+    If it's equal to 0, print "the number is equal to zero."
+8.End the program.
+## PROGRAM:
+~~~
+#include<stdio.h>
+int main()
+{
+    int a;
+    int *p;
+    scanf("%d",&a);
+    p=&a;
+    if(*p > 0)
+    {
+        printf("the number is Positive");
+    }
+    else if(*p<0)
+    {
+        printf("the number is Negative");
+    }
+    else if (*p == 0)
+    {
+        printf("the number is equal to zero");
+    }
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/ec8f6119-bacd-478e-8bd2-1b5ec785091a)
+## RESULT:
+Thus, C program to test whether the number is equal to zero or not by using pointers has executed successfully.
+
+# EX5(B)-FUNCTIONS AND STORAGE CLASS
+## AIM:
+To Write a C program to calculate the GCD of 144,270 using Recursion.
+## ALGORITHM:
+1. Include the <stdio.h> header file.
+
+2.Define the gcd function that takes two integers, a and b, as parameters.
+
+    If b is equal to 0, return a as the GCD (base case).
+    Otherwise, recursively call the gcd function with arguments b and a % b.
+3. Define the main function.
+
+4. Declare two integer variables, num1 and num2, and an integer variable result.
+
+5. Set the values of num1 and num2 to 144 and 270, respectively.
+
+6. Swap the values of num1 and num2 if num1 is less than num2 to ensure num1 is greater or equal to num2.
+
+7. Calculate the GCD of num1 and num2 using the gcd function and store the result in the result variable.
+
+8. Print the result, indicating the GCD of num2 and num1.
+## PROGRAM:
+~~~
+#include <stdio.h>
+int gcd(int a, int b) {
+    if (b == 0) {
+        return a; // Base case: GCD is found when b becomes 0
+    } else {
+        return gcd(b, a % b); // Recursive case: GCD calculation
+    }
+}
+int main() {
+    int num1 = 144;
+    int num2 = 270;
+    int result;
+
+    // Ensure num1 is greater than or equal to num2 for the algorithm to work correctly
+    if (num1 < num2) {
+        int temp = num1;
+        num1 = num2;
+        num2 = temp;
+    }
+    result = gcd(num1, num2);
+    printf("G.C.D of %d and %d is %d.\n", num2, num1, result);
+    return 0;
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/586521c6-490f-4c8a-83e6-8091d47caa98)
+## RESULT:
+Thus, C program to calculate the GCD of 144,270 using Recursion has successfully executed.
+
+# EXP5(C)-ARRAYS AND ITS OPERATIONS
+## AIM:
+To Write a C Program to print the Opposite Diagonal Elements of a Matrix[3x3]
+## ALGORITHM:
+1.Include the <stdio.h> header file.
+
+2. Define the main function.
+
+3. Declare integer variables m, n, i, and j.
+
+4. Read two integers, m and n, from the user, representing the dimensions of the matrix.
+
+5. Declare a 2D integer array arr with dimensions m rows and n columns.
+
+6. Use nested loops to read m rows and n columns of integer values into the arr matrix.
+
+7. Print the message "The Diagonal Elements of a Matrix = " to indicate the output.
+
+8. Use a loop to iterate through the diagonal elements of the matrix and print them.
+
+   Initialize i to 0 and j to m - 1.
+   While i is less than n and j is greater than or equal to 0, print the value of arr[i][j].
+   Increment i and decrement j in each iteration.
+
+## PROGRAM:
+~~~
+#include <stdio.h>
+
+int main()
+{
+     int m,n,i,j;
+     scanf("%d %d",&m,&n);
+    int arr[m][n];
+    for(i=0;i<m;i++)
+{
+     for(j=0;j<m;j++)
+{
+      scanf("%d ",&arr[i][j]);
+}
+}
+printf("The Diagonal Elements of a Matrix = ");
+for(i=0,j=m-1; i<n && j>=0;i++,j--)
+{
+printf("%d ",arr[i][j]);
+}
+return 0;
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/bf95b18e-3f8c-427b-bde3-d819021641b2)
+## RESULT:
+ Thus,C Program to print the Opposite Diagonal Elements of a Matrix[3x3] has executed successfully.
+
+ # EX5(D)-STRINGS
+ ## AIM:
+To Write a program in C to print all the alphabets using pointer.
+## ALGORITHM:
+1. Include the <stdio.h> header file.
+
+2. Define the main function.
+
+3. Declare a character array str of size 50 and initialize it with the string "ABCDEFGHIJKLMNOPQRSTUVWXYZ."
+
+4. Declare a character pointer p to store the address of the string.
+
+5. Initialize an integer variable i to 0.
+
+6. Print the message "The Alphabets are:" to indicate the output.
+
+7. Use a while loop to iterate through the string str until the null character '\0' is encountered.
+
+    Inside the loop, print the character pointed to by p, increment the pointer p, and increment i.
+
+8. End the program.
+## PROGRAM:
+~~~
+#include<stdio.h>
+int main()
+{
+    char str[50]="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    char *p;
+    p=str;
+    int i=0;
+    printf("The Alphabets are : \n");
+    while(str[i]!='\0')
+    {
+       printf(" %c ",*p); 
+       p++;
+       i++;
+    }
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/9be2d40b-0103-4c9b-8a51-7d9bea9a3354)
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/94c43f36-1109-4fc6-8c84-244debb98601)
+## RESULT:
+Thus, program in C to print all the alphabets using pointer has successfully executed.
+
+# EX6(A)-POINTERS
+## AIM:
+To write a c program to find sum and average in the range from 30 to 35 using pointer.
+## ALGORITHM:
+1. Include the <stdio.h> header file.
+
+2.Define the main function.
+
+3. Declare integer variables m, n, and i.
+
+4. Declare integer pointers pm and pn, and double variables sum and avg.
+
+5. Declare double pointers psum and pavg and assign the addresses of sum and avg to them.
+
+6. Read two integers m and n from the user using scanf.
+
+7. Use a for loop to calculate the sum of integers from m to n and store it in sum.
+
+8. Calculate the average avg using the formula: avg = sum / (n - m + 1).
+
+9. Print the sum and average values with two decimal places using printf.
+
+10. End the program with a return 0; statement.
+## PROGRAM:
+~~~
+#include<stdio.h>
+int main()
+{
+  int m, n, i;
+  int *pm, *pn;
+  pm= &m, pn= &n;
+  double sum=0.0, avg;
+  double *psum, *pavg;
+  psum= &sum, pavg= &avg;
+  scanf("%d %d", pm, pn);
+  for(i=m;i<=n;i++)
+  {
+    *psum += i;
+  }
+  *pavg= (*psum) / (*pn - *pm + 1);
+  printf("Sum= %.2lf, Average= %.2lf", *psum, *pavg);
+  return 0;
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/d6663d19-2fe2-4a88-bd06-f211334f949e)
+## RESULT:
+Thus, c program to find sum and average in the range from 30 to 35 using pointer has successfully executed.
 
 
