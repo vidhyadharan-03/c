@@ -1087,4 +1087,150 @@ int main()
 ## RESULT:
 Thus, c program to find sum and average in the range from 30 to 35 using pointer has successfully executed.
 
+# EX6(B)-DYNAMIC MEMORY ALLOCATION
+## AIM:
+To Write a C program to check given input is even or odd using calloc()
+## ALGORITHM:
+1. Include the <stdio.h> and <stdlib.h> header files.
+
+2. Define the main function.
+
+3. Declare an integer variable a to store an integer input.
+
+4. Read an integer from the user and store it in the variable a using scanf.
+
+Allocate memory for an integer pointer p using calloc, which is unnecessary in this code as you directly assign the address of a to p.
+
+5. Assign the address of the variable a to the pointer p.
+
+6. Check if the value pointed to by p is even or odd.
+
+7. If it's even, print "a is Even Number" with the value of a.
+
+8. If it's odd, print "a is Odd Number" with the value of a.
+
+9. End the program with a return 0; statement.
+## PROGRAM:
+~~~
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+
+    int *p =(int *)calloc(1,sizeof(int));
+    p=&a;
+    if(*p%2==0)
+    {
+        printf("%d is Even Number",*p);
+    }
+    else
+    {
+        printf("%d is Odd Number",*p);
+    }
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/cf854eef-6126-4f92-a598-4f74ecbf96c2)
+## RESULT:
+C program to check given input is even or odd using calloc() has successfully executed.
+
+# EX6(C)-STRUCTURE
+## AIM:
+Create a C program to store the information of 5 students by using an array of structures.
+## ALGORITHM:
+1. Include the <stdio.h> header file.
+
+2. Define a structure named students with members name (a character array) and marks (a floating-point number).
+
+3. Declare an array of students named S with a size of 5.
+
+4. Define the main function.
+
+5. Use a for loop to read student information for 5 students, including their names and marks, and store it in the S array.
+
+6. Print the message "Displaying Information:" to indicate the output.
+
+7. Use another for loop to display the information for each student, including the roll number (indexed from 1), name, and marks.
+
+8. End the program.
+## PROGRAM:
+~~~
+#include<stdio.h>
+struct students
+{
+   //int rollno;
+   char name[20];
+   float marks;
+}S[5];
+int main()
+{
+   int i;
+   for(i=0;i<5;i++)
+    {
+       scanf("%s %f",S[i].name,&S[i].marks);
+    }
+printf("Displaying Information:\n");
+    for(i=0;i<5;i++)
+    {
+         
+         printf("Roll number: %d\nFirst name: %s\nMarks: %.1f\n\n",
+                 i+1,S[i].name,S[i].marks);
+    }
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/ee190db5-6187-4987-b35d-f79416afadf8)
+## RESULT:
+Thus, C program to store the information of 5 students by using an array of structures has successfully executed.
+
+# EX6(D)-USER DEFINED DATA-TYPES
+## AIM:
+write a program to display the class timings using enumeration (like first hour=8 am...fifth hour=12 pm)
+## ALGORITHM:
+1. Include the <stdio.h> header file.
+
+2. Define an enumeration named ClassHours to represent class hours, starting from 8 am.
+
+3. Define the main function.
+
+4. Print "Class Timings" to indicate the output.
+
+5. Use the enumeration constants to display class timings for each hour, both in the morning (am) and in the afternoon (pm).
+
+6. End the program with a return 0; statement.
+## PROGRAM:
+~~~
+#include <stdio.h>
+
+// Enumeration for class hours
+enum ClassHours {
+    FIRST_HOUR = 8,
+    SECOND_HOUR,
+    THIRD_HOUR,
+    FOURTH_HOUR,
+    FIFTH_HOUR
+};
+
+int main() {
+    printf("Class Timings\n");
+    
+    // Display class timings using the enumeration
+    printf("First Hour = %d am\n", FIRST_HOUR);
+    printf("second Hour = %d am\n", SECOND_HOUR);
+    printf("Third Hour = %d am\n", THIRD_HOUR);
+    printf("Fourth Hour = %d am\n", FOURTH_HOUR);
+    printf("Fifth Hour = %d pm\n", FIFTH_HOUR);
+
+    return 0;
+}
+~~~
+## OUTPUT:
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/9a3947de-887e-4d6c-9744-7186fff746a7)
+## RESULT:
+ program to display the class timings using enumeration (like first hour=8 am...fifth hour=12 pm) has successfully executed.
+
+
+
 
