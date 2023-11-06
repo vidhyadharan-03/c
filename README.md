@@ -22,7 +22,7 @@ int main()
 }
 ~~~
 ## OUTPUT:
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/0f97087a-245e-4770-9148-182abd47488f)
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/27b2ecbd-1260-4aad-93e7-2bf6b5684cd1)
 ## RESULT:
 Thus, find the sum of two integer numbers has successfully executed.
 
@@ -54,8 +54,7 @@ int main()
 }
 ~~~
 ## OUTPUT:
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/736393e1-0a03-46e7-8e9c-86ebbbdf53e6)
-
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/60b95dd1-eb71-4005-886f-539313a06d23)
 ## RESULT:
 Thus, The c program has been executed successfully.
 
@@ -91,8 +90,7 @@ int main()
 ~~~
 
 ## OUTPUT:
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/8ddab278-32a1-404e-9ccf-b1a3e349fa2b)
-
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/27faecab-d563-4c52-adce-7be1ae0d5025)
 ## RESULT:
 Thus, Area of circle is executed successfully.
 
@@ -145,13 +143,11 @@ int main()
      return 0;
 }
 ~~~
-
 ## OUTPUT:
-
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/e59ccebf-e722-4965-9b8c-7bce34a6c09b)
-
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/a5175291-b863-4d6d-a4a8-dca5a9065ce5)
 ## RESULT:
 Thus, simulation of arithmetic operators using the switch statement successfully executed.
+
 
 # EX2(A) LOOPS:
 ## AIM:
@@ -194,10 +190,8 @@ int main()
   return 0;
 }
 ~~~
-
 ## OUTPUT:
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/dff9b5c6-2e80-4e1f-b602-ca0664c706b7)
-
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/4d122fc0-29d2-4689-8250-96aa2d8061ac)
 ## RESULT:
 Thus, printng the sum of N even numbers from 1 to N successfully executed.
 
@@ -274,8 +268,7 @@ int main()
 }
 ~~~
 ## OUTPUT:
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/26f09f67-603e-49d2-86b2-8ce3e302edcb)
-
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/01dfc4b8-ab2f-4a0d-9905-c5172ff152fb)
 ## RESULT:
 Thus, The C program has been executed successfully.
 
@@ -341,8 +334,7 @@ void fibo(int x)
 }
 ~~~
 ## OUTPUT:
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/46c2f314-1463-466b-950f-6ca07d949edc)
-
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/5d90ebcd-6ae4-4434-b55d-1b25dcd554ff)
 ## RESULT:
 Thus, Generation of Fibonacci sequence of n numbers successfully executed.
 
@@ -414,8 +406,7 @@ int main()
 }
 ~~~
 ## OUTPUT:
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/fe31a4fe-853d-43de-a387-c2ee910a3a49)
-
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/97463a9f-cee9-4f7e-98a7-6c8437867592)
 ## RESULT:
 Thus, the above pattern is successfully executed.
 
@@ -494,10 +485,10 @@ int main()
 }
 ~~~
 ## OUTPUT:
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/e459602b-e78c-431d-a962-a59416a8c4bd)
-
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/277d0d63-30c8-450d-89d2-16072b61c5ca)
 ## RESULT:
 Thus, the c program successfully executed:
+
 
 # EX3(B)-LOOPING
 ## AIM:
@@ -564,7 +555,7 @@ int main()
 }
 ~~~
 ## OUTPUT:
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/594afae2-6481-4cdb-9af2-497f35c8b465)
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/c2bec4f0-9ef0-4824-947d-5bff12cedc6e)
 ## RESULT:
 Thus, C Program to print Armstrong Numbers between 1 to n has successfully executed.
 
@@ -608,7 +599,7 @@ int main()
 }
 ~~~
 ## OUTPUT:
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/fcefcb1e-1719-44bf-99c6-e22d671a389f)
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/ee542aa2-147a-4050-a78b-84c9f53b12a7)
 ## RESULT:
 Thus,the C program executed successfully.
 
@@ -660,11 +651,10 @@ int main()
 }
 ~~~
 ## OUTPUT:
-![image](https://github.com/vidhyadharan-03/c/assets/114286357/f5a014eb-7964-44b8-a247-a208c09b2cd0)
+![image](https://github.com/vidhyadharan-03/c/assets/114286357/63281daa-fd90-4fff-a679-222158ee96ad)
 ## RESULT:
 Thus,  C program to search an element in an array  is successfully executed.
 
-# 
 
 
 
