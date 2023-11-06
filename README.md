@@ -11,7 +11,6 @@ Write a program to find sum of two integer numbers
 4.using sum opertor add both the variables.
 
 5.Print the output on the screen.
-
 ## PROGRAM:
 ~~~
 #include <stdio.h>
@@ -24,7 +23,6 @@ int main()
 ~~~
 ## OUTPUT:
 ![image](https://github.com/vidhyadharan-03/c/assets/114286357/0f97087a-245e-4770-9148-182abd47488f)
-
 ## RESULT:
 Thus, find the sum of two integer numbers has successfully executed.
 
